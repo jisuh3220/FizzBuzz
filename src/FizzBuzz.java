@@ -6,13 +6,14 @@ class FizzBuzz {
     public static void main(String[] args) {
 
         int i = 1; // Initialize the counter
-        while (i < 100) { // Loop until i reaches 100
-
-            i = dofizzbuzz(i);
+        while (i < 100) {
+            i = doFizzBuzz(i);
         }
     }
 
-    private static int dofizzbuzz(int i) {
+    private static int doFizzBuzz(int i) {
+        // Loop until i reaches 100
+
         // Find out which numbers divide i.
         boolean divisibleBy3 = i % 3 == 0;
         boolean divisibleBy5 = i % 5 == 0;
